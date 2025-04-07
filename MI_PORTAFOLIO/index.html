@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<br>
+  <header>
+  <img src="assets/perfil.jpeg" alt="Foto de perfil">
+    <h1>Hola, soy Benjamin Espinosa</h1>
+    <p>Estudiente de Desarrollo de Software</p>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="social-icons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/benjam%C3%ADn-espinosa-a1b88529a/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+  
+      <!-- GitHub -->
+      <a href="https://github.com/tu-usuario" class="github" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  
+  </header>
+  
+  <section id="sobre-mi">
+    <h2 class="color-banco">Sobre mí</h2>
+    <p class="parrafo_sobremi">
+      Trabajé como servidor público durante 20 años en el Ministerio de Defensa, 
+      desempeñándome en el cargo de Soldado Profesional. Al finalizar mi carrera militar, 
+      me motivé a estudiar una tecnología en Desarrollo de Software. 
+      Soy una persona que disfruta enfrentarse a retos, 
+      con el firme propósito de seguir superándome y alcanzar mis metas.
+<br> <br>
+      <p class="parrafo_sobremi">Me considero proactivo, con muchas ganas de 
+        aprender y contribuir en proyectos reales. Me interesa colaborar con equipos 
+        dinámicos donde 
+        pueda aportar ideas y crecer profesionalmente.</p>
+        <br>
+      <p class="parrafo_sobremi"> Soy apasionado por la creación de interfaces
+         modernas y funcionales. Actualmente, curso el quinto semestre de la Tecnología 
+         en Desarrollo de Software en la Universidad Nacional Abierta y a Distancia (UNAD). 
+         La tecnología y el desarrollo 
+        de soluciones innovadoras son áreas que me motivan profundamente.</p>
+    <br>
+    <p class="parrafo_sobremi">En este momento, estoy enfocado en 
+      encontrar oportunidades para realizar mis prácticas profesionales, 
+      con el objetivo de aplicar mis conocimientos y seguir desarrollándome como programador. Cabe destacar 
+      que estas prácticas no están relacionadas con un proyecto de grado.</p>
+    <br>
+    <p class="parrafo_sobremi">He realizado proyectos con lenguajes como Python,
+       PHP y JavaScript, además de conocimientos básicos en desarrollo web utilizando 
+       HTML, CSS y React. 
+      También estoy familiarizado con bases de datos SQL.</p>
+    <br>
+   
+  </section>
+
+  <section id="proyectos">
+    <h2 class="color-banco">Tecnologias</h2>
+    <div class="container">
+      <!-- HTML -->
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo">
+        <h3>HTML</h3>
+      </div>
+
+      <!-- CSS -->
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+        <h3>CSS</h3>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+        <h3>JavaScript</h3>
+      </div>
+
+     
+     <div class="container">
+        <!-- Python -->
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+        <h3>Python</h3>
+      </div>
+
+      <!-- PHP -->
+      <div class="card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo">
+        <h3>PHP</h3>
+      </div>
+        <!-- SQL -->
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL logo">
+          <h3>SQL</h3>
+        </div>
+      </div>
+  </section>
+
+  <section id="proyectos">
+    <h2 class="color-banco" >Proyectos</h2>
+    <div class="proyecto">
+      <h3 class="color-banco" >Proyecto 1</h3>
+      <div class="imgproyecto">
+        <img src="assets/restaurante.jpg" alt="Captura pantalla del proyecto restaurante">
+      </div>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#">Ver más</a>
+    </div>
+    
+    <!-- Más proyectos aquí -->
+  
+    <div class="proyecto">
+      <h3>Proyecto 2</h3>
+      <div class="imgproyecto_crud">
+        <img src="assets/crud_empleados.jpg" alt="Captura pantalla proyecto CRUD">
+      </div>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#">Ver más</a>
+    </div>
+    
+    <div class="proyecto">
+      <h3 class="color-banco">Proyecto 3</h3>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#">Ver más</a>
+    </div>
+  </section>
+
+  <div id="mensaje-enviado" style="display: none; color: green; margin-top: 15px; text-align: center;">
+    ¡Gracias! Tu mensaje ha sido enviado.
+  </div>
+
+
+  <section class="estudios-section">
+    <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+
+    <!-- Estudio en finalizado -->
+    <div class="container-estudios">
+      <div class="card-estudio">
+        <i class="fa-brands fa-pied-piper-hat"></i>
+        <div class="card-content">
+          <div class="titulo">Tecnico en Gestion Documental</div>
+          <div class="institucion">SENA - Servicio Nacional de Aprendizaje</div>
+          <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
+        </div>
+      </div>
+
+      <!-- Estudio finalizado  -->
+      <div class="card-estudio">
+        <i class="fas fa-paint-brush"></i>
+        <div class="card-content">
+          <div class="titulo">Técnico en Diseño Gráfico</div>
+          <div class="institucion">Fundación Educativa y Técnica hacia el Progreso Industrial</div>
+          <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
+        </div>
+      </div>
+  </div>
+  <div class="container-estudios">
+        <!-- Estudio finalizado  -->
+          <div class="card-estudio">
+            <i class="fa-solid fa-file"></i>
+            <div class="card-content">
+              <div class="titulo">Curso de Analisis de Datos</div>
+              <div class="institucion">Talento TECH Oriente</div>
+              <span class="estado" style="background: #4caf50; color: white;">Finalizado</span>
+            </div>
+        </div>
+        <!-- Estudio en proceso -->
+        <div class="card-estudio">
+          <i class="fa-solid fa-house"></i>
+          <div class="card-content">
+            <div class="titulo">Tecnología en Desarrollo de Software</div>
+            <div class="institucion">Universidad Nacional Abierta y a Distancia</div>
+            <span class="estado">En curso (5º semestre)</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section id="contacto">
+    
+    <h2 class="color-banco">Contacto</h2>
+    <form action="https://formspree.io/f/mgvapwao" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Benjamin-Espinosa</p>
+  </footer>
+</body>
+</html>
