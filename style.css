@@ -1,0 +1,311 @@
+:root {
+    --primario: #04080f;
+    --secundario: #daf0f9;
+    --texto: #1f1b1b;
+    --fondo: #fefcfc;
+    --gris: #484c50;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secundario);
+    color: var(--texto);
+    padding: 0 20px;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    background: var(--fondo);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url("assets/fondookok.jpg"); /* Ruta de tu imagen */
+    background-size: cover;       /* Que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centrada */
+    background-repeat: no-repeat; /* Que no se repita */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    color: white;
+  }
+  
+  header img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 1px solid var(--primario);
+    /* Solo dos esquinas redondeadas */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  header h1 {
+    color: var(--primario);
+    margin-bottom: 5px;
+  }
+
+  /* Animacion */
+  h1 {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000; /* Cursor */
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+
+  
+  nav {
+    margin-top: 15px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gris);
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .parrafo_sobremi{
+    font-size: 20px;
+    line-height: 24px;
+
+  }
+  
+  h2 {
+    color: var(--primario);
+    margin-bottom: 15px;
+  }
+  
+  .proyecto {
+    background: var(--fondo);
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid var(--primario);
+    box-shadow: 0 0 10px rgba(195, 193, 193, 0.05);
+    border-radius: 8px;
+  }
+  .color-banco{
+    color: rgb(24, 23, 23);
+  }
+  
+  form {
+    background: var(--fondo);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+  }
+  
+  form button {
+    
+    background: var(--primario);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+  }
+  
+  form button:hover {
+    background: #0b5ed7;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #mensaje-enviado {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 500;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    width: 200px;
+    background: rgb(248, 246, 246);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(187, 159, 159, 0.265);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .imgproyecto img{
+    padding: 5px;
+    margin: 5px;
+    height: 190px;
+    width: 150px;
+  }
+  .imgproyecto_crud img{
+    padding: 5px;
+    margin: 5px;
+    height: 120px;
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    margin-left: 440px;
+  }
+
+  .social-icons a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #064262; /* Azul LinkedIn */
+  }
+
+  .social-icons a.github:hover {
+    color: #333; /* Color GitHub */
+  }
+
+/* Seccion Estudios  */
+  .estudios-section {
+    max-width: 800px;
+    margin: auto;
+  }
+  .container-estudios{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .estudios-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem, 20px;
+    color: #333;
+  }
+
+  .card-estudio {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 740px;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-estudio i {
+    font-size: 2.5rem;
+    color: #4a90e2;
+  }
+
+  .card-content {
+    flex: 1;
+  }
+
+  .titulo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+  }
+
+  .institucion {
+    color: #777;
+    margin-top: 0.2rem;
+  }
+
+  .estado {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 4px 10px;
+    background: #ffca28;
+    color: #000;
+    font-size: 0.8rem;
+    border-radius: 999px;
+  }
